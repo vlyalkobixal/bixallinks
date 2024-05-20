@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pattern_for_event_type_paths
+label: 'Pattern for Event type paths'
+type: 'canonical_entities:node'
+pattern: 'events/[node:title]'
+selection_criteria:
+  09de8e4a-7961-45fd-b7e5-8c1a3b46c1d1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 09de8e4a-7961-45fd-b7e5-8c1a3b46c1d1
+    context_mapping:
+      node: node
+    bundles:
+      event: event
+selection_logic: and
+weight: -5
+relationships: {  }

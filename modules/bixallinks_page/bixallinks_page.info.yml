@@ -1,0 +1,8 @@
+name: Bixal Links Page CT
+type: module
+description: Page CT for the Bixal Links framework.
+core_version_requirement: ^9 || ^10
+package: 'Bixal Links'
+dependencies:
+  - bixallinks_general:bixallinks_general
+  - drupal:paragraphs

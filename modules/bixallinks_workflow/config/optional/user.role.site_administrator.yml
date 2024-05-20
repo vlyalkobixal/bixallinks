@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.country
+    - taxonomy.vocabulary.region
+    - taxonomy.vocabulary.sectors
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.topics
+  module:
+    - media
+    - taxonomy
+id: site_administrator
+label: 'Site Administrator'
+weight: 6
+is_admin: null
+permissions:
+  - 'access taxonomy overview'
+  - 'access user profiles'
+  - 'administer permissions'
+  - 'administer taxonomy'
+  - 'administer users'
+  - 'create media'
+  - 'create terms in country'
+  - 'create terms in region'
+  - 'create terms in sectors'
+  - 'create terms in tags'
+  - 'create terms in topics'
+  - 'delete any media'
+  - 'delete terms in country'
+  - 'delete terms in region'
+  - 'delete terms in sectors'
+  - 'delete terms in tags'
+  - 'delete terms in topics'
+  - 'edit terms in country'
+  - 'edit terms in region'
+  - 'edit terms in sectors'
+  - 'edit terms in tags'
+  - 'edit terms in topics'
+  - 'update any media'
+  - 'view media'
+  - 'view own unpublished media'

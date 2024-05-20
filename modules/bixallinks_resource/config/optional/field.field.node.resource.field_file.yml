@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.resource
+  module:
+    - file
+id: node.resource.field_file
+field_name: field_file
+entity_type: node
+bundle: resource
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: media/file
+  file_extensions: 'doc docx xls xlsx pdf'
+  max_filesize: ''
+  description_field: true
+field_type: file

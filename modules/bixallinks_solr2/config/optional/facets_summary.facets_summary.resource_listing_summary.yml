@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.primary_site_search_index
+    - views.view.resources_listing
+  module:
+    - search_api
+id: resource_listing_summary
+name: 'Resource Listing Summary'
+facet_source_id: 'search_api:views_embed__resources_listing__resource_listing_embed'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+  reset_facets:
+    processor_id: reset_facets
+    weights:
+      build: '30'
+    settings:
+      link_text: 'Clear Filters'
+      position: before
+  show_text_when_empty:
+    processor_id: show_text_when_empty
+    weights:
+      build: '10'
+    settings:
+      text:
+        value: 'No results found.'
+        format: plain_text
+facets:
+  countries_resource:
+    checked: true
+    label: Countries
+    separator: ', '
+    show_count: false
+    weight: 0
+  resource_type:
+    checked: true
+    label: 'Resource Type'
+    separator: ', '
+    show_count: false
+    weight: 0
+  sectors_resource:
+    checked: true
+    label: Sectors
+    separator: ', '
+    show_count: false
+    weight: 0
+  topics_resource:
+    checked: true
+    label: Topics
+    separator: ', '
+    show_count: false
+    weight: 0

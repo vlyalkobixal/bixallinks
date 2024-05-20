@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.event
+    - node.type.resource
+  module:
+    - node
+id: author
+label: Author
+weight: 5
+is_admin: null
+permissions:
+  - 'create article content'
+  - 'create event content'
+  - 'create resource content'
+  - 'edit own article content'
+  - 'edit own event content'
+  - 'edit own resource content'
+  - 'view own unpublished content'

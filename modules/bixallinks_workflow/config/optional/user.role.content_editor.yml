@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+    - workflows.workflow.bixallinks_editorial
+  module:
+    - comment
+    - content_moderation
+    - contextual
+    - file
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+id: content_editor
+label: 'Content editor'
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'administer url aliases'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'edit own comments'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'use links_editorial transition archive'
+  - 'use links_editorial transition archived_draft'
+  - 'use links_editorial transition archived_published'
+  - 'use links_editorial transition create_new_draft'
+  - 'use links_editorial transition publish'
+  - 'use links_editorial transition ready_for_editor_review'
+  - 'use links_editorial transition ready_to_publisher_approval'
+  - 'use links_editorial transition request_updates'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

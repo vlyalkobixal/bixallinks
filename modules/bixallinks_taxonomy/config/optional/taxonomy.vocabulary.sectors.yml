@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Sectors
+vid: sectors
+description: 'USAID Sectors'
+weight: 0

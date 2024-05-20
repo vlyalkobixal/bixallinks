@@ -1,0 +1,4 @@
+id: bixallinks_terms_import
+label: Term migrations
+description: Custom term migrations for Bixal Links Default Term migration.
+source_type: CSV files

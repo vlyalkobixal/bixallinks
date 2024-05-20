@@ -1,0 +1,13 @@
+name: Bixallinks Default Terms migration/import
+type: module
+package: 'Bixal Links'
+description: Migrates taxonomy terms to the Bixal Links Default Site
+core_version_requirement: ^10
+
+dependencies:
+  - drupal:migrate
+  - drupal:migrate_source_csv
+  - drupal:migrate_tools
+  - drupal:migrate_plus
+  - drupal:taxonomy
+  - bixallinks_taxonomy:bixallinks_taxonomy

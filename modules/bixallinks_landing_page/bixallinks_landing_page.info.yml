@@ -1,0 +1,8 @@
+name: Bixal Links Landing Page
+type: module
+description: Landing page for the Bixal Links framework.
+core_version_requirement: ^9 || ^10
+package: 'Bixal Links'
+dependencies:
+  - bixallinks_general:bixallinks_general
+  - drupal:paragraphs

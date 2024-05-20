@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pattern_for_resource_type_paths
+label: 'Pattern for Resource type paths'
+type: 'canonical_entities:node'
+pattern: 'resources/[node:title]'
+selection_criteria:
+  35b9dc40-961f-4125-864a-b6e1d524885a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 35b9dc40-961f-4125-864a-b6e1d524885a
+    context_mapping:
+      node: node
+    bundles:
+      resource: resource
+selection_logic: and
+weight: -5
+relationships: {  }

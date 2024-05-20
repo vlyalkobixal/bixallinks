@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pattern_for_landing_page_type_paths
+label: 'Pattern for Landing page type paths'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  09ec34ea-9755-46ad-a3a2-b3798dfd567f:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 09ec34ea-9755-46ad-a3a2-b3798dfd567f
+    context_mapping:
+      node: node
+    bundles:
+      landing_page: landing_page
+selection_logic: and
+weight: -5
+relationships: {  }

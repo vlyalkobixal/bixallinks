@@ -1,0 +1,57 @@
+name: 'Bixal Links General'
+type: module
+description: 'Custom module for Bixal Links 3'
+core_version_requirement: ^10
+package: 'Bixal Links'
+dependencies:
+  - drupal:media
+  - drupal:media_library
+  - drupal:block
+  - drupal:menu_ui
+  - drupal:menu_link_content
+  - drupal:field
+  - drupal:file
+  - drupal:filter
+  - drupal:path
+  - drupal:link
+  - drupal:search
+  - drupal:options
+  - drupal:system
+  - drupal:text
+  - drupal:user
+  - drupal:views
+  - drupal:views_ui
+  - drupal:telephone
+  - drupal:taxonomy
+  - drupal:responsive_image
+  - drupal:breakpoint
+  - drupal:crop
+  - drupal:field_group
+  - drupal:image_widget_crop
+  - drupal:allowed_formats
+  - drupal:themable_forms
+  - drupal:media_library_edit
+  - drupal:entity_reference_revisions
+  - drupal:paragraphs
+  - drupal:admin_toolbar
+  - drupal:admin_toolbar_tools
+  - drupal:twig_tweak
+  - drupal:twig_field_value
+  - drupal:smart_date
+  - drupal:address
+  - drupal:inline_entity_form
+  - drupal:pathauto
+  - drupal:viewsreference
+  - drupal:views
+  - drupal:search_api
+  - drupal:search_api_solr
+  - drupal:facets
+  - drupal:facets_summary
+  - drupal:better_exposed_filters
+  - drupal:migrate
+  - drupal:migrate_source_csv
+  - drupal:migrate_tools
+  - drupal:migrate_plus
+  - drupal:taxonomy
+  - drupal:workflows
+  - drupal:content_moderation_notifications

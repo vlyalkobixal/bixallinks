@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies: {  }
+id: content_published
+workflow: links_editorial
+transitions:
+  publish: publish
+roles: {  }
+author: true
+site_mail: false
+to_replace_bcc: true
+emails: ''
+subject: 'Your content has been published'
+body:
+  value: '<p>Your submitted content has been approved and is now accessible to the public.</p><p>[current-page:url]</p>'
+  format: basic_html
+label: 'Content Published'

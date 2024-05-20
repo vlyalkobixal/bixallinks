@@ -1,0 +1,41 @@
+{
+    "name": "drupal/bixallinks_general",
+    "description": "Drush 9 command to delete default content types",
+    "autoload": {
+        "psr-4": {
+            "Drupal\\bixallinks_general\\": "src/"
+        }
+    },
+    "require": {
+        "drupal/field_group": "^3.4",
+        "drupal/crop": "^2.3",
+        "drupal/image_widget_crop": "^2.4",
+        "drupal/themable_forms": "^1.0",
+        "drupal/media_library_edit": "^3.0",
+        "drupal/entity_reference_revisions": "^1.11",
+        "drupal/paragraphs": "^1.17",
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/twig_tweak": "^3.3",
+        "drupal/twig_field_value": "^2.0",
+        "drupal/smart_date": "^4.1",
+        "drupal/address": "^2.0",
+        "drupal/inline_entity_form": "^3.0@RC",
+        "drupal/pathauto": "^1.12",
+        "drupal/allowed_formats": "^3.0",
+        "drupal/search_api": "^1.34",
+        "drupal/search_api_solr": "^4.3",
+        "drupal/viewsreference": "^2.0@beta",
+        "drupal/migrate_plus": "^6.0",
+        "drupal/migrate_source_csv": "^3.6",
+        "drupal/migrate_tools": "^6.0",
+        "drupal/facets": "^3.0@beta",
+        "drupal/better_exposed_filters": "^6.0"
+    },
+    "extra": {
+        "drush": {
+            "services": {
+                "drush.services.yml": "^9"
+            }
+        }
+    }
+}

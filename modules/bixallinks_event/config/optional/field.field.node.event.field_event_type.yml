@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_type
+    - node.type.event
+  module:
+    - options
+id: node.event.field_event_type
+field_name: field_event_type
+entity_type: node
+bundle: event
+label: 'Type of Event'
+description: "conference|Conference\r\nengagement_event|Engagement Event\r\nseminar|Seminar\r\ntraining|Training\r\nwebinar|Webinar\r\nworking_group_meeting|Working Group Meeting"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

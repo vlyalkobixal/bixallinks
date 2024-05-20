@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pattern_for_person_content_type_paths
+label: 'Pattern for Person Content type paths'
+type: 'canonical_entities:node'
+pattern: 'person/[node:title]'
+selection_criteria:
+  3a7d44a9-0e12-4e1e-a5db-e6ba62c2549d:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 3a7d44a9-0e12-4e1e-a5db-e6ba62c2549d
+    context_mapping:
+      node: node
+    bundles:
+      person: person
+selection_logic: and
+weight: -5
+relationships: {  }

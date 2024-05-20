@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: identifier
+label: Identifier
+description: 'Links for the USA Identifier'
+locked: false

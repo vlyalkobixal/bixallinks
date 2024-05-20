@@ -1,0 +1,6 @@
+name: Bixal Links Taxonomies
+type: module
+description: Taxonomies for the Bixal Links framework.
+core_version_requirement: ^9 || ^10
+package: 'Bixal Links'
+dependencies: {}

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies: {  }
+id: content_ready_to_be_reviewed
+workflow: links_editorial
+transitions:
+  ready_for_editor_review: ready_for_editor_review
+roles:
+  content_editor: content_editor
+author: false
+site_mail: false
+to_replace_bcc: true
+emails: ''
+subject: 'Contend Ready for Editor Review'
+body:
+  value: '<p>New content has been submitted for review. View it here: [node:edit-url]</p>'
+  format: basic_html
+label: 'Content Ready for Editor Review'

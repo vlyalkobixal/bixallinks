@@ -1,0 +1,10 @@
+name: Bixal Links Event CT
+type: module
+description: Event CT for the Bixal Links framework.
+core_version_requirement: ^9 || ^10
+package: 'Bixal Links'
+dependencies:
+  - bixallinks_general:bixallinks_general
+  - drupal:paragraphs
+  - bixallinks_taxonomy:bixallinks_taxonomy
+  - bixallinks_person:bixallinks_person

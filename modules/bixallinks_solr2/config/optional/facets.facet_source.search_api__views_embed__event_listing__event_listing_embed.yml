@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_embed__event_listing__event_listing_embed
+name: 'search_api:views_embed__event_listing__event_listing_embed'
+filter_key: event_listing_embed
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false

@@ -1,0 +1,7 @@
+name: Bixal Links Solr 2
+type: module
+description: Solr Configs, Solr Listing views, Facets.
+core_version_requirement: ^9 || ^10
+package: 'Bixal Links 2'
+dependencies:
+  - bixallinks_solr:bixallinks_solr

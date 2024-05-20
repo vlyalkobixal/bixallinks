@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pattern_for_article_type_paths
+label: 'Pattern for Article type paths'
+type: 'canonical_entities:node'
+pattern: 'articles/[node:title]'
+selection_criteria:
+  043a0a41-80d6-4b22-86b7-f9936a415c40:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 043a0a41-80d6-4b22-86b7-f9936a415c40
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+selection_logic: and
+weight: -5
+relationships: {  }

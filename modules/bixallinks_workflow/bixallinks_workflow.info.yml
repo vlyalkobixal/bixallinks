@@ -1,0 +1,13 @@
+name: Bixal Links Workflow and Notifications
+type: module
+description: Workflow and Notifications.
+core_version_requirement: ^9 || ^10
+package: 'Bixal Links'
+dependencies:
+  - bixallinks_general:bixallinks_general
+  - bixallinks_resource:bixallinks_resource
+  - bixallinks_event:bixallinks_event
+  - bixallinks_article:bixallinks_article
+  - drupal:workflows
+  - drupal:content_moderation_notifications
+

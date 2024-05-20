@@ -1,0 +1,7 @@
+name: Bixal Links Person CT
+type: module
+description: Person CT for the Bixal Links framework.
+core_version_requirement: ^9 || ^10
+package: 'Bixal Links'
+dependencies:
+  - bixallinks_general:bixallinks_general

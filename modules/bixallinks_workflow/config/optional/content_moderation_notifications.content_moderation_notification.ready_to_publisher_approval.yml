@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ready_to_publisher_approval
+workflow: links_editorial
+transitions:
+  ready_to_publisher_approval: ready_to_publisher_approval
+roles:
+  publisher: publisher
+author: false
+site_mail: true
+to_replace_bcc: true
+emails: ''
+subject: 'Content Ready to Publisher Approval'
+body:
+  value: '<p>New content has been submitted for approval. View it here: [node:edit-url]</p>'
+  format: basic_html
+label: 'Ready to Publisher Approval'

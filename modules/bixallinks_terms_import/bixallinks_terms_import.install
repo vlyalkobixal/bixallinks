@@ -1,0 +1,40 @@
+<?php
+use Drupal\Core\Database\Database;
+use Drupal\migrate\MigrateMessage;
+use Drupal\migrate\Plugin\MigrateSourceInterface;
+use Drupal\migrate\Plugin\MigrationInterface;
+use Drupal\migrate\Row;
+use Drupal\migrate_tools\MigrateBatchExecutable;
+
+function bixallinks_terms_import_uninstall() {
+// Remove migration
+  \Drupal::service('config.factory')->getEditable('migrate_plus.migration.countries')->delete();
+  \Drupal::service('config.factory')->getEditable('migrate_plus.migration.regions')->delete();
+  \Drupal::service('config.factory')->getEditable('migrate_plus.migration.topics')->delete();
+  \Drupal::service('config.factory')->getEditable('migrate_plus.migration.sectors')->delete();
+  \Drupal::service('config.factory')->getEditable('migrate_plus.migration_group.bixallinks_terms_import')->delete();
+}
+
+/**
+ * Implements hook_install
+ * Run the import scripts to import default terms.
+ */
+/**
+ * Implements hook_install
+ * Run the spoke migration scripts daily.
+ */
+function bixallinks_terms_import_install() {
+  $manager = Drupal::service('plugin.manager.migration');
+  $migration_ids = [
+    "regions",
+    'countries',
+    'topics',
+    'sectors',
+  ];
+
+  foreach ($migration_ids as $migration_id) {
+    $migration = $manager->createInstance($migration_id);
+    $executable = new MigrateBatchExecutable($migration, new MigrateMessage());
+    $executable->import();
+  }
+}

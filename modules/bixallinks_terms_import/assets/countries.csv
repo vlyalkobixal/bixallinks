@@ -1,0 +1,95 @@
+id,name,region_id,region_name
+1,Afghanistan,69,Middle East
+2,Albania,55,Africa
+3,Angola,55,Africa
+4,Armenia,64,Europe and Eurasia
+5,Azerbaijan,64,Europe and Eurasia
+6,Bangladesh,60,Asia
+7,Belarus,64,Europe and Eurasia
+8,Benin,55,Africa
+9,Bolivia,65,Latin America and the Caribbean
+10,Bosnia,64,Europe and Eurasia
+11,Brazil,65,Latin America and the Caribbean
+12,Burkina Faso,55,Africa
+13,Burma,60,Asia
+14,Burundi,55,Africa
+15,Cambodia,60,Asia
+16,Chad,55,Africa
+17,Chile,65,Latin America and the Caribbean
+18,China,60,Asia
+19,Colombia,65,Latin America and the Caribbean
+20,Cuba,65,Latin America and the Caribbean
+21,Cyprus,64,Europe and Eurasia
+22,Democratic Republic of the Congo,55,Africa
+23,Djibouti,55,Africa
+24,Dominican Republic,65,Latin America and the Caribbean
+25,Ecuador,65,Latin America and the Caribbean
+26,Egypt,69,Middle East
+27,El Salvador,65,Latin America and the Caribbean
+28,Eritrea,55,Africa
+29,Ethiopia,55,Africa
+30,Georgia,64,Europe and Eurasia
+31,Ghana,55,Africa
+32,Guatemala,65,Latin America and the Caribbean
+33,Guinea,55,Africa
+34,Guyana,65,Latin America and the Caribbean
+35,Haiti,65,Latin America and the Caribbean
+36,Honduras,65,Latin America and the Caribbean
+37,India,60,Asia
+38,Indonesia,60,Asia
+39,Iraq,69,Middle East
+40,Jamaica,65,Latin America and the Caribbean
+41,Jordan,69,Middle East
+42,Kazakhstan,60,Asia
+43,Kenya,55,Africa
+44,Kosovo,64,Europe and Eurasia
+45,Kyrgyz Republic,60,Asia
+46,Laos,60,Asia
+47,Lebanon,69,Middle East
+48,Liberia,55,Africa
+49,Libya,69,Middle East
+50,Macedonia,64,Europe and Eurasia
+51,Madagascar,55,Africa
+52,Malawi,55,Africa
+53,Mali,55,Africa
+54,Mauritania,55,Africa
+55,Mexico,65,Latin America and the Caribbean
+56,Moldova,64,Europe and Eurasia
+57,Mongolia,60,Asia
+58,Morocco,"55, 69","Africa, Middle East"
+59,Mozambique,55,Africa
+60,Namibia,55,Africa
+61,Nepal,60,Asia
+62,Nicaragua,65,Latin America and the Caribbean
+63,Niger,55,Africa
+64,Nigeria,55,Africa
+65,Pakistan,60,Asia
+66,Panama,65,Latin America and the Caribbean
+67,Paraguay,65,Latin America and the Caribbean
+68,Peru,65,Latin America and the Caribbean
+69,Philippines,60,Asia
+70,Russia,64,Europe and Eurasia
+71,Rwanda,55,Africa
+72,Senegal,55,Africa
+73,Serbia,64,Europe and Eurasia
+74,Sierra Leone,55,Africa
+75,Somalia,55,Africa
+76,South Africa,55,Africa
+77,South Sudan,55,Africa
+78,Sri Lanka,60,Asia
+79,Sudan,55,Africa
+80,Syria,69,Middle East
+81,Tajikistan,60,Asia
+82,Tanzania,55,Africa
+83,Thailand,60,Asia
+84,Timor Leste,60,Asia
+85,Tunisia,69,Middle East
+86,Turkmenistan,60,Asia
+87,Uganda,55,Africa
+88,Ukraine,64,Europe and Eurasia
+89,Uzbekistan,60,Asia
+90,Vietnam,60,Asia
+91,West Bank and Gaza,69,Middle East
+92,Yemen,69,Middle East
+93,Zambia,55,Africa
+94,Zimbabwe,55,Africa

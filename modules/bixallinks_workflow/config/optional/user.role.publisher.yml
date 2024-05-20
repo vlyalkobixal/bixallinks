@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflows.workflow.bixallinks_editorial
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+id: publisher
+label: Publisher
+weight: 4
+is_admin: null
+permissions:
+  - 'use links_editorial transition archive'
+  - 'use links_editorial transition archived_draft'
+  - 'use links_editorial transition archived_published'
+  - 'use links_editorial transition create_new_draft'
+  - 'use links_editorial transition publish'
+  - 'use links_editorial transition ready_for_editor_review'
+  - 'use links_editorial transition ready_to_publisher_approval'
+  - 'use links_editorial transition request_updates'
+  - 'view any unpublished content'
+  - 'view latest version'

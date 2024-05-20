@@ -1,0 +1,40 @@
+id: countries
+migration_tags:
+  - CSV
+migration_group: bixallinks_terms_import
+label: Countries
+source:
+  plugin: csv
+  path: modules/custom/bixallinks-general/modules/bixallinks_terms_import/assets/countries.csv
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  ids:
+    - id
+  fields:
+    0:
+      name: id
+    1:
+      name: name
+    2:
+      name: region_id
+    3:
+      name: region_name
+process:
+  name: name
+  vid:
+    plugin: default_value
+    default_value: country
+  field_region:
+    plugin: entity_lookup
+    source: region_name
+    value_key: name
+    bundle_key: vid
+    bundle: region
+    entity_type: taxonomy_term
+    ignore_case: true
+destination:
+  plugin: 'entity:taxonomy_term'
+dependencies:
+  module:
+    - migrate_source_csv
