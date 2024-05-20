@@ -1,6 +1,7 @@
 {
     "name": "drupal/bixallinks_general",
-    "description": "Drush 9 command to delete default content types",
+    "type": "drupal-module",
+    "description": "Bixal Links Base Module to add Basic Content Types and other settings",
     "autoload": {
         "psr-4": {
             "Drupal\\bixallinks_general\\": "src/"
