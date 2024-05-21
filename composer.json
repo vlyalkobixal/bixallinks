@@ -1,6 +1,6 @@
 {
     "name": "vlyalkobixal/bixallinks",
-    "type": "drupal-custom-module",
+    "type": "drupal-module",
     "description": "Bixal Links Base Module to add Basic Content Types and other settings",
     "license": "proprietary",
     "autoload": {
