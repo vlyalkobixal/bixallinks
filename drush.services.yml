@@ -1,5 +1,5 @@
 services:
-  bixallinks_general.commands:
-    class: \Drupal\bixallinks_general\Commands\RemoveDefaultCT
+  bixallinks.commands:
+    class: \Drupal\bixallinks\Commands\RemoveDefaultCT
     tags:
       - { name: drush.command }

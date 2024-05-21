@@ -4,7 +4,7 @@ description: Solr Configs, Solr Listing views, Facets.
 core_version_requirement: ^9 || ^10
 package: 'Bixal Links'
 dependencies:
-  - bixallinks_general:bixallinks_general
+  - bixallinks:bixallinks
   - bixallinks_resource:bixallinks_resource
   - bixallinks_event:bixallinks_event
   - bixallinks_article:bixallinks_article

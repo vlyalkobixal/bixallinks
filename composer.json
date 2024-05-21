@@ -1,10 +1,10 @@
 {
-    "name": "drupal/bixallinks_general",
+    "name": "drupal/bixallinks",
     "type": "drupal-module",
     "description": "Bixal Links Base Module to add Basic Content Types and other settings",
     "autoload": {
         "psr-4": {
-            "Drupal\\bixallinks_general\\": "src/"
+            "Drupal\\bixallinks\\": "src/"
         }
     },
     "require": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\bixallinks_general\Commands;
+namespace Drupal\bixallinks\Commands;
 
 use Drupal\Component\Plugin\Exception\PluginNotFoundException;
 use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
@@ -21,9 +21,9 @@ class RemoveDefaultCT extends DrushCommands {
    * @param string $node_type
    *   Node Type/ Bundle to be set.
    *
-   * @command bixallinks_general:deleteDefaultContentType
+   * @command bixallinks:deleteDefaultContentType
    * @aliases delete-default-ct
-   * @usage bixallinks_general:deleteDefaultContentType
+   * @usage bixallinks:deleteDefaultContentType
    *
    * @throws \Exception
    */
@@ -35,10 +35,10 @@ class RemoveDefaultCT extends DrushCommands {
         $nodes = $storage_handler->loadByProperties(['type' => $node_type]);
 
         if (isset($nodes)) {
-          \Drupal::logger('bixallinks_general')->notice('Deleting nodes for ' . lcfirst($node_type) . " Content Type.");
+          \Drupal::logger('bixallinks')->notice('Deleting nodes for ' . lcfirst($node_type) . " Content Type.");
           foreach ($nodes as $node) {
             $storage_handler->delete($nodes);
-            \Drupal::logger('bixallinks_general')->notice('Al nodes for the ' . lcfirst($node_type) . " Content Type were deleted.");
+            \Drupal::logger('bixallinks')->notice('Al nodes for the ' . lcfirst($node_type) . " Content Type were deleted.");
           }
         }
         // Delete content type.
@@ -48,16 +48,16 @@ class RemoveDefaultCT extends DrushCommands {
         if (isset($content_type)) {
           $content_type->delete();
         } else {
-          \Drupal::logger('bixallinks_general')->notice('Content Type ' . lcfirst($node_type) . " does not exists.");
+          \Drupal::logger('bixallinks')->notice('Content Type ' . lcfirst($node_type) . " does not exists.");
         }
       }
       else {
-        \Drupal::logger('bixallinks_general')->notice('This command only supports deletion of the Basic Page and Article Content Types.');
+        \Drupal::logger('bixallinks')->notice('This command only supports deletion of the Basic Page and Article Content Types.');
       }
     }
     catch (InvalidPluginDefinitionException|PluginNotFoundException $e) {
       // Log the exception to watchdog.
-      \Drupal::logger('bixallinks_general')->error($e->getMessage());
+      \Drupal::logger('bixallinks')->error($e->getMessage());
     }
   }
 
