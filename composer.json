@@ -37,6 +37,9 @@
             "services": {
                 "drush.services.yml": "^9"
             }
+        },
+        "installer-paths": {
+            "web/modules/contrib/{$name}": ["type:drupal-module"]
         }
     }
 }
