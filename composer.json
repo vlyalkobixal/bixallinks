@@ -8,7 +8,14 @@
             "Drupal\\bixallinks\\": "src/"
         }
     },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
     "require": {
+        "drupal/core": "^10",
         "composer/installers": "^2.0",
         "drupal/field_group": "^3.4",
         "drupal/crop": "^2.3",
@@ -34,6 +41,8 @@
         "drupal/facets": "^3.0@beta",
         "drupal/better_exposed_filters": "^6.0"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "drush": {
             "services": {
