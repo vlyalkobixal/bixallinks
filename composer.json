@@ -1,13 +1,15 @@
 {
-    "name": "drupal/bixallinks",
+    "name": "vlyalkobixal/bixallinks",
     "type": "drupal-module",
     "description": "Bixal Links Base Module to add Basic Content Types and other settings",
+    "license": "Bixal",
     "autoload": {
         "psr-4": {
             "Drupal\\bixallinks\\": "src/"
         }
     },
     "require": {
+        "composer/installers": "^2.0",
         "drupal/field_group": "^3.4",
         "drupal/crop": "^2.3",
         "drupal/image_widget_crop": "^2.4",
@@ -38,6 +40,7 @@
                 "drush.services.yml": "^9"
             }
         },
+        "installer-name": "bixallinks",
         "installer-paths": {
             "web/modules/contrib/{$name}": ["type:drupal-module"]
         }
