@@ -2,7 +2,7 @@
     "name": "vlyalkobixal/bixallinks",
     "type": "drupal-module",
     "description": "Bixal Links Base Module to add Basic Content Types and other settings",
-    "license": "Bixal",
+    "license": "proprietary",
     "autoload": {
         "psr-4": {
             "Drupal\\bixallinks\\": "src/"
