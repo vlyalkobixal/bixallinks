@@ -103,25 +103,35 @@ This module consists of various submodules, here is the order in which you shoul
 
 ```bash
 # Install default CTs
+
+# Install all dependencies
 drush en bixallinks
+
+# Add base taxonomy vocabularies (countries, regions, sectors, topics)
 drush en bixallinks_taxonomy
+# Import base taxonomy terms for the added vocabularies (countries, regions, sectors, topics)
 drush en bixallinks_terms_import
+# Add person content type (used in the event content type)
 drush en bixallinks_person
+# Add landon_page content type 
 drush en bixallinks_landing_page
+# Add event content type 
 drush en bixallinks_event
+# Add resource content type 
 drush en bixallinks_resource
 # Only run the following commands,
 # If content type is still present (page/article),
 # Delete page and article CTs using following scripts
 drush bixallinks:deleteDefaultContentType page
 drush bixallinks:deleteDefaultContentType article
-# Install page and article CTs
+# Install page content type
 drush en bixallinks_page
+# Install article content type
 drush en bixallinks_article
-# Install Solr configs and add Solr listings views
+# Install Solr configs and add Solr article/event/resource/main site search listings views
 drush en bixallinks_solr
-# Install Solr listings views facets
+# Install and configure basic Solr listings views facets
 drush en bixallinks_solr2
-# Install content workflow and notifications
+# Install and configure basic content workflow and notifications
 drush en bixallinks_workflow
 ```
