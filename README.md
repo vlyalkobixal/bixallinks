@@ -23,7 +23,6 @@ the code snippet below in your composer.json file within the
             }
         }
     }
-]
 ```
 
 As an example, once you add the code above, your entire repositories block might look like this:
