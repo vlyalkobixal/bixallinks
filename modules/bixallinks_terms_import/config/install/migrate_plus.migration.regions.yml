@@ -5,7 +5,7 @@ migration_group: bixallinks_terms_import
 label: Regions
 source:
   plugin: csv
-  path: modules/custom/bixallinks-general/modules/bixallinks_terms_import/assets/regions.csv
+  path: modules/contrib/bixallinks/modules/bixallinks_terms_import/assets/regions.csv
   delimiter: ','
   enclosure: '"'
   header_row_count: 1

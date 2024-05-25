@@ -29,7 +29,7 @@ class RemoveDefaultCT extends DrushCommands {
    */
   public function deleteDefaultContentType($node_type) {
     try {
-      if ($node_type === 'article' || $node_type === 'page') {
+//      if ($node_type === 'article' || $node_type === 'page') {
         // Delete all nodes of given content type.
         $storage_handler = \Drupal::entityTypeManager()->getStorage('node');
         $nodes = $storage_handler->loadByProperties(['type' => $node_type]);
@@ -50,10 +50,10 @@ class RemoveDefaultCT extends DrushCommands {
         } else {
           \Drupal::logger('bixallinks')->notice('Content Type ' . lcfirst($node_type) . " does not exists.");
         }
-      }
-      else {
-        \Drupal::logger('bixallinks')->notice('This command only supports deletion of the Basic Page and Article Content Types.');
-      }
+//      }
+//      else {
+//        \Drupal::logger('bixallinks')->notice('This command only supports deletion of the Basic Page and Article Content Types.');
+//      }
     }
     catch (InvalidPluginDefinitionException|PluginNotFoundException $e) {
       // Log the exception to watchdog.
