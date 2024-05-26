@@ -106,7 +106,6 @@ This module consists of various submodules, here is the order in which you shoul
 
 # Install all dependencies
 drush en bixallinks
-
 # Add base taxonomy vocabularies (countries, regions, sectors, topics)
 drush en bixallinks_taxonomy
 # Import base taxonomy terms for the added vocabularies (countries, regions, sectors, topics)
@@ -119,11 +118,6 @@ drush en bixallinks_landing_page
 drush en bixallinks_event
 # Add resource content type 
 drush en bixallinks_resource
-# Only run the following commands,
-# If content type is still present (page/article),
-# Delete page and article CTs using following scripts
-drush bixallinks:deleteDefaultContentType page
-drush bixallinks:deleteDefaultContentType article
 # Install page content type
 drush en bixallinks_page
 # Install article content type
@@ -134,4 +128,9 @@ drush en bixallinks_solr
 drush en bixallinks_solr2
 # Install and configure basic content workflow and notifications
 drush en bixallinks_workflow
+
+
+# Only run the following command,
+# If content type needs to be deleted,
+drush bixallinks:deleteDefaultContentType [content type machine name here]
 ```

@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.article.field_article_type
     - field.field.node.article.field_countries
     - field.field.node.article.field_image
-    - field.field.node.article.field_paragraphs
     - field.field.node.article.field_region
     - field.field.node.article.field_sector
     - field.field.node.article.field_subtitle
@@ -61,7 +60,6 @@ content:
 hidden:
   field_article_type: true
   field_countries: true
-  field_paragraphs: true
   field_region: true
   field_sector: true
   field_subtitle: true

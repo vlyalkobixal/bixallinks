@@ -14,12 +14,11 @@ dependencies:
     - field.field.node.resource.field_teaser
     - field.field.node.resource.field_topic
     - node.type.resource
-    - responsive_image.styles.bx_landscape_full_width
   module:
     - file
     - link
     - options
-    - responsive_image
+    - image
     - text
     - user
 id: node.resource.default
@@ -51,15 +50,15 @@ content:
     weight: 104
     region: content
   field_image:
-    type: responsive_image
+    type: image
     label: hidden
     settings:
-      responsive_image_style: bx_landscape_full_width
       image_link: ''
+      image_style: ''
       image_loading:
         attribute: lazy
-    third_party_settings: {  }
-    weight: 110
+    third_party_settings: { }
+    weight: 3
     region: content
   field_link:
     type: link

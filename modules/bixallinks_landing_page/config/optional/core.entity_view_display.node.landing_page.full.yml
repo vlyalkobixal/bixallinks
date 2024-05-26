@@ -5,7 +5,6 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.landing_page.body
     - field.field.node.landing_page.field_image
-    - field.field.node.landing_page.field_paragraphs
     - field.field.node.landing_page.field_subtitle
     - field.field.node.landing_page.field_teaser
     - node.type.landing_page
@@ -29,15 +28,6 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 1
-    region: content
-  field_paragraphs:
-    type: entity_reference_revisions_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 2
     region: content
   field_subtitle:
     type: string
