@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.event.field_subtitle
     - field.field.node.event.field_teaser
     - field.field.node.event.field_topic
+    - field.field.node.event.field_content
     - node.type.event
   module:
     - text
@@ -53,3 +54,4 @@ hidden:
   field_subtitle: true
   field_teaser: true
   field_topic: true
+  field_content: true

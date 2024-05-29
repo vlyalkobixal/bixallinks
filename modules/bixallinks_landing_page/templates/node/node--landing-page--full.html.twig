@@ -81,5 +81,9 @@
   <div{{ content_attributes.addClass('node__content clearfix') }}>
     {{ title_prefix }}
     {{ title_suffix }}
+
+    {% if content.field_content | render %}
+      {{ content.field_content }}
+    {% endif %}
   </div>
 </article>

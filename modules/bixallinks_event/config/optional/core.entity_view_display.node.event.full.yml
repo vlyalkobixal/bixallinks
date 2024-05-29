@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.event.field_subtitle
     - field.field.node.event.field_teaser
     - field.field.node.event.field_topic
+    - field.field.node.event.field_content
     - node.type.event
   module:
     - address
@@ -160,5 +161,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 100
+    region: content
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: { }
+    weight: 102
     region: content
 hidden: {  }

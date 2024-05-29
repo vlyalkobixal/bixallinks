@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.article.field_tags
     - field.field.node.article.field_teaser
     - field.field.node.article.field_topic
+    - field.field.node.article.field_content
     - node.type.article
   module:
     - user
@@ -35,3 +36,4 @@ hidden:
   field_tags: true
   field_teaser: true
   field_topic: true
+  field_content: true

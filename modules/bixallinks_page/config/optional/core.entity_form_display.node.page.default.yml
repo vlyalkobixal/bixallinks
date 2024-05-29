@@ -7,11 +7,13 @@ dependencies:
     - field.field.node.page.field_subtitle
     - field.field.node.page.field_teaser
     - image.style.thumbnail
+    - field.field.node.page.field_content
     - node.type.page
   module:
     - image
     - path
     - text
+    - paragraphs
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -92,6 +94,26 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_content:
+    type: paragraphs
+    weight: 121
+    region: content
+    settings:
+      title: Content
+      title_plural: Content
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: select
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: duplicate
+    third_party_settings: { }
   uid:
     type: entity_reference_autocomplete
     weight: 6

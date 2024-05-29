@@ -82,5 +82,8 @@
     {{ title_prefix }}
     {{ title_suffix }}
 
+    {% if content.field_content | render %}
+      {{ content.field_content }}
+    {% endif %}
   </div>
 </article>

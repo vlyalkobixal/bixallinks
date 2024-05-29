@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.resource.field_subtitle
     - field.field.node.resource.field_teaser
     - field.field.node.resource.field_topic
+    - field.field.node.resource.field_content
     - node.type.resource
   module:
     - file
@@ -122,5 +123,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 100
+    region: content
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: { }
+    weight: 102
     region: content
 hidden: {  }

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.landing_page.field_image
     - field.field.node.landing_page.field_subtitle
     - field.field.node.landing_page.field_teaser
+    - field.field.node.landing_page.field_content
     - node.type.landing_page
   module:
     - entity_reference_revisions
@@ -43,6 +44,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: { }
+    weight: 102
     region: content
 hidden:
   body: true

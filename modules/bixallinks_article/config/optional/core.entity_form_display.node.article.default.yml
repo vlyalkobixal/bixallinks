@@ -13,12 +13,14 @@ dependencies:
     - field.field.node.article.field_teaser
     - field.field.node.article.field_topic
     - image.style.thumbnail
+    - field.field.node.landing_page.field_content
     - node.type.article
   module:
     - field_group
     - image_widget_crop
     - path
     - text
+    - paragraphs
 third_party_settings:
   field_group:
     group_tabs:
@@ -42,6 +44,7 @@ third_party_settings:
         - field_teaser
         - field_image
         - body
+        - field_content
       label: Content
       region: content
       parent_name: group_tabs
@@ -153,6 +156,26 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_content:
+    type: paragraphs
+    weight: 121
+    region: content
+    settings:
+      title: Content
+      title_plural: Content
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: select
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: duplicate
+    third_party_settings: { }
   path:
     type: path
     weight: 9

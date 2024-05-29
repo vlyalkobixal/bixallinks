@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.article.field_teaser
     - field.field.node.article.field_topic
     - image.style.wide
+    - field.field.node.article.field_content
     - node.type.article
   module:
     - entity_reference_revisions
@@ -101,6 +102,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 6
+    region: content
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: { }
+    weight: 102
     region: content
 hidden:
   field_tags: true

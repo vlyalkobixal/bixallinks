@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.article.field_teaser
     - field.field.node.article.field_topic
     - image.style.wide
+    - field.field.node.article.field_content
     - node.type.article
   module:
     - image
@@ -68,3 +69,4 @@ hidden:
   field_sector: true
   field_subtitle: true
   field_topic: true
+  field_content: true
