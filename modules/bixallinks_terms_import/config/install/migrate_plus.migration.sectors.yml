@@ -5,7 +5,7 @@ migration_group: bixallinks_terms_import
 label: Sectors
 source:
   plugin: csv
-  path: modules/contrib/bixallinks/modules/bixallinks_terms_import/assets/sectors.csv
+  path: /app/web/modules/contrib/bixallinks/modules/bixallinks_terms_import/assets/sectors.csv
   delimiter: ','
   enclosure: '"'
   header_row_count: 1
