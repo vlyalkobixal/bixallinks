@@ -14,7 +14,6 @@ dependencies:
   - drupal:filter
   - drupal:path
   - drupal:link
-  - drupal:search
   - drupal:options
   - drupal:system
   - drupal:text

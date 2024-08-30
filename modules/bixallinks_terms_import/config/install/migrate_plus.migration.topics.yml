@@ -2,7 +2,7 @@ id: topics
 migration_tags:
   - CSV
 migration_group: bixallinks_terms_import
-label: Countries
+label: Topics
 source:
   plugin: csv
   path: /app/web/modules/contrib/bixallinks/modules/bixallinks_terms_import/assets/topics.csv
